@@ -1,0 +1,16 @@
+.top-button{
+    margin:0 1rem;
+    padding: .75rem 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-button p{
+    margin:0 1rem;
+    color: white;
+}
+
+.green-bc{
+    background-color: #2DCE98;
+}
