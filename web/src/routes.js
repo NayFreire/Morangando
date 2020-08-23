@@ -3,7 +3,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom';
 
 import Login from "./pages/Login/index";
 import Home from "./pages/Home/index";
-// import Profile from "./pages/Profile/index";
+
 // import NewIncident from './pages/NewIncident/index';
 
 export default function Routes(){

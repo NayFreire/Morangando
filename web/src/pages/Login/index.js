@@ -43,7 +43,7 @@ export default function Login(){
                 </div> */}
 
                  <br/>
-                <button type="submit"><Link to='/home'>ENTRAR</Link></button>
+                 <Link to='/home'><button type="submit">ENTRAR</button></Link>
             </div>
 
             <div className="register-div">

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import { FiHome,FiCalendar,FiDollarSign,FiUsers,FiPackage } from "react-icons/fi"
 import { FaSeedling,FaWallet } from "react-icons/fa"
 
@@ -17,52 +17,52 @@ export default function SidebarMenu(){
                 
 
                 <li className="nav-item">
-                    <Link className="nav-link">
+                    <NavLink to="/home" className="nav-link">
                         <FiHome size={22}/>
                         <span className="text-link">Home</span>
-                    </Link>
+                    </NavLink>
                 </li>
 
                 <li className="nav-item">
-                    <Link className="nav-link">
+                    <NavLink to="/calendar"className="nav-link">
                         <FiCalendar size={22}/>
                         <span className="text-link">Calendário</span>
-                    </Link>
+                    </NavLink>
                 </li>
 
                 <li className="nav-item">
-                    <Link className="nav-link">
+                    <NavLink to="/check" className="nav-link">
                         <FiDollarSign size={22}/>
                         <span className="text-link">Cheques</span>
-                    </Link>
+                    </NavLink>
                 </li>
 
                 <li className="nav-item">
-                    <Link className="nav-link">
+                    <NavLink to="/providers" className="nav-link">
                         <FiUsers size={22}/>
                         <span className="text-link">Fornecedores</span>
-                    </Link>
+                    </NavLink>
                 </li>
 
                 <li className="nav-item">
-                    <Link className="nav-link">
+                    <NavLink to="/shipping" className="nav-link">
                         <FiPackage size={22}/>
                         <span className="text-link">Remessas</span>
-                    </Link>
+                    </NavLink>
                 </li>
 
                 <li className="nav-item">
-                    <Link className="nav-link">
+                    <NavLink to="/tillage" className="nav-link">
                         <FaSeedling size={22}/>
                         <span className="text-link">Lavouras</span>
-                    </Link>
+                    </NavLink>
                 </li>
 
                 <li className="nav-item">
-                    <Link className="nav-link">
+                    <NavLink to="/expenses" className="nav-link">
                         <FaWallet size={22}/>
                         <span className="text-link">Despesas</span>
-                    </Link>
+                    </NavLink>
                 </li>
 
                 
