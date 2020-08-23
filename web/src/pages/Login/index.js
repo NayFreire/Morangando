@@ -1,5 +1,7 @@
 import React from 'react';
 import { FiMail,FiLock  } from "react-icons/fi"
+import {Link,useHistory} from 'react-router-dom';
+
 
 import background from '../../assets/background-waves.svg'
 import Title from '../../assets/MORAN GANDO.svg'
@@ -7,20 +9,28 @@ import './styles.css'
 
 
 export default function Login(){
+    const history = useHistory();
+
+    function logar(){
+        history.push('/home')
+    }
+
     return(
         <div className="container" style={{backgroundImage: `url(${background})`}}>
             <div className="form">
                 <img src={Title} alt="Morangando"/>
                 <h2 className="text" >Olá bem vindo de volta. Logue-se para continuar.</h2>
 
-                <div className="input-container">
-                    <FiMail size="25px"/>
-                    <input type="email" placeholder="EMAIL"/>
-                </div>
-                <div className="input-container">
-                    <FiLock size="25px"/>
-                    <input type="password" placeholder="SENHA"/>
-                </div>
+                <form onSubmit={logar} action="" method="post">
+                    <div className="input-container">
+                        <FiMail size="25px"/>
+                        <input type="email" placeholder="EMAIL"/>
+                    </div>
+                    <div className="input-container">
+                        <FiLock size="25px"/>
+                        <input type="password" placeholder="SENHA"/>
+                    </div>
+                </form>
                 {/* <div className="row">
                 <label>
                     <input type="checkbox"
@@ -33,7 +43,7 @@ export default function Login(){
                 </div> */}
 
                  <br/>
-                <button type="submit">ENTRAR</button>
+                <button type="submit"><Link to='/home'>ENTRAR</Link></button>
             </div>
 
             <div className="register-div">
