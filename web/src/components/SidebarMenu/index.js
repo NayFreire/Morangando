@@ -10,7 +10,7 @@ import title from '../../assets/MORAN GANDO -medium.svg'
 export default function SidebarMenu(){
     return(
         <>
-        <nav className="navbar">
+        <nav className="navbar" >
              <ul className="navbar-nav">
                  
                      <img src={title} alt="Morangando"/>

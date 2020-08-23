@@ -7,7 +7,7 @@ import graph2 from '../../assets/graph2.svg'
 
 export default function Main(){
     return(
-        <div className="mainMain">
+        <div className="main-container">
             <div className="row">
 
                 <div className="card">

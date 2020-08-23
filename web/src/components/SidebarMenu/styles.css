@@ -5,6 +5,10 @@
     transition: width 600ms ease;
     z-index: 5;
     background-color: white;
+    background-image: url('../../assets/waves\ -sidebar.svg');
+    background-repeat: no-repeat;
+
+    background-position: bottom;
   }
   
   .navbar-nav {
@@ -55,7 +59,7 @@
       border-radius: 15px;
       padding:1rem  1.5rem;
       transition: all .3s ease-in;
-      border:1px solid white;
+      border:1px solid transparent;
   }
   .nav-item:hover .nav-link{
       background-color: #f5f5f5;
